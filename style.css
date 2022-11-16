@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+    font-family: 'Overpass', sans-serif;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(213, 19%, 18%);
+    border-radius:15px;
+    min-height: 500px;
+    width: 520px;
+    padding: 30px;
+}
+
+.display{
+    display: none;
+}
+
+.preview img{
+    padding: 20px;
+    background-color: hsl(214, 20%, 23%);
+    border-radius: 50%;
+}
+.preview h1{
+    margin: 30px 0px 40px 0px;
+}
+.preview h3{
+    color: hsl(217, 12%, 63%);
+    margin: 10px 0;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.buttons a{
+    padding: 20px 27px;
+    color: white;
+    font-weight: 700;
+    background-color: hsl(213, 20%, 20%);
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.buttons a:hover{
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+button{
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 35px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
+button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+.appreciate{
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.appreciate img{
+    margin: 30px 0;
+}
+.appreciate p{
+    margin: 10px 0;
+    font-size: 20px;
+    color: hsl(25, 97%, 53%);
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: hsl(214, 20%, 23%);
+}
+.appreciate h1{
+    margin: 30px 0;
+    font-size: 40px;
+}
+.appreciate h3{
+    text-align: center;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width:375px)
+{
+    main{
+        width: 370px;
+    }
+
+    .buttons a{
+        padding: 15px 21px;
+    }
+}
